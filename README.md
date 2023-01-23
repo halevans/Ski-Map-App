@@ -43,7 +43,11 @@
 
 ### Component Structure
 
-> __App__ 
+> __App__: top-level component; where data is fetched from the API
+>
+> __--Favourites__: this is the favourites route -- the build of the app will start here to complete the MVP for the list items under "Quick Add"
+>
+> __---ListContainer__: this is a container that renders the individual list items
 
 
 ### Challenges
