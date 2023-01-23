@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class App extends Component {
-    render () {
+class ListItem extends Component {
+    render() {
         return(
             <>
-            <h1>Ski App</h1>
+            <li></li>
             </>
         );
     }
 }
 
-export default App;
+export default ListItem;

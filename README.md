@@ -48,6 +48,10 @@
 > __--Favourites__: this is the favourites route -- the build of the app will start here to complete the MVP for the list items under "Quick Add"
 >
 > __---ListContainer__: this is a container that renders the individual list items
+>
+> __----SubmitForm__: this component contains the form that the user needs to fill in order to add one task to the list. It includes an edit box for the input and a submit button
+>
+> __----ListItem__: displays a single item that the user has entered. It contains the item text, and BUTTONS...
 
 
 ### Challenges
