@@ -14,7 +14,7 @@ class ListContainer extends Component {
     addItemChange = (e) => {
         this.setState({
             newItem: e.target.value
-        })
+        });
     }
 
     addItem = (e) => {
@@ -24,7 +24,7 @@ class ListContainer extends Component {
             this.setState({
                 items: [...this.state.items, this.state.newItem],
                 newItem: ''
-            })
+            });
         }
     }
 
@@ -44,7 +44,6 @@ class ListContainer extends Component {
                         value={this.state.newItem} />
                     <button
                         className="submit-button"
-                        type="submit"
                         onClick={this.addItem}>Submit</button>
                 </form>
 
