@@ -6,7 +6,7 @@ class ListContainer extends Component {
         super(props);
         this.state = {
             items: [],
-            newItem: '',
+            newItem: "",
             taskCount: 0
         }
     }
@@ -23,7 +23,7 @@ class ListContainer extends Component {
         if (this.inputElement !== "") {
             this.setState({
                 items: [...this.state.items, this.state.newItem],
-                newItem: ''
+                newItem: ""
             });
         }
     }
