@@ -4,7 +4,7 @@ class ListItem extends Component {
     render() {
         return(
             <>
-            <li></li>
+            <li>{this.props.item}</li>
             </>
         );
     }

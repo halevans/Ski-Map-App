@@ -31,7 +31,7 @@ class ListContainer extends Component {
     render() {
 
         const allItems = this.state.items.map((item, index) => {
-            return <ListItem />
+            return <ListItem item={item} key={index}/>
         });
 
         return(
