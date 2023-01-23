@@ -1,3 +1,73 @@
+# Ski App
+
+## Description
+
+## Deployment link
+
+## Technologies Used
+
+## Planning
+
+### Technical Requirements
+
+- [ ] Add a new item to a list
+- [ ] Mark the item as complete/favourite/(watch, read, listen) later/flag/etc
+- [ ] Edit an item from a list
+- [ ] Remove an item from a list
+- [ ] Clear/delete all items
+- [ ] Clear/delete only marked items
+- [ ] Fetch data from at least one 3rd party API using Axios or fetch.
+- [ ] Make frequent Git commits with descriptive messages, explaining your commit.
+
+### User Stories for minimum viable product (MVP)
+
+- [ ] As a user, I want to add a new location to a list so that I can look it up at a later date
+- [ ] As a user, I want to flag the location as complete so that I know I have looked it up
+- [ ] As a user, I want to be able to edit an item on the list so that I can amend spelling mistakes
+- [ ] As a user, I want to be able to remove an item from a list so that I don't have to see it any more
+- [ ] As a user, I want to be able to clear/delete all items from the list so that I have a quick way of removing all items
+- [ ] As a user, I want to be able to clear/delete only items that I have marked, so that I can delete some but not all items
+- [ ] As a user, I want to be able to view the map of a ski resort
+
+### Wireframes
+
+#### Home
+
+![Wireframe for Home](/images/Home.png)
+
+#### Favourites
+
+![Wireframe for Favourites](/images/Favourites.png)
+
+## Build/Code Process
+
+### Component Structure
+
+> __App__ 
+
+
+### Challenges
+
+### Wins
+
+### Noteworthy Functions
+
+### Key Learnings/Takeaways
+
+### Bugs
+
+## Final Product
+
+## Future Improvements
+
+## Outstanding Queries
+
+
+
+
+
+# *** REACT INFO ***
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
