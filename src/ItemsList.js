@@ -3,11 +3,16 @@ import ListItem from "./ListItem";
 
 class ItemsList extends Component {
     render() {
+
+        const allItems = this.props.items.map((item, index) => {
+            return <ListItem item={item} key={index} />
+        });
+
         return(
             <>
                 <h3>ItemsList</h3>
                 <ul>
-                    <ListItem />
+                    {allItems}
                 </ul>
                 <button
                     type="button"

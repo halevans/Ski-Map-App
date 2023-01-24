@@ -28,8 +28,11 @@ class ListContainer extends Component {
 
         this.setState({
             items: [...this.state.items, this.state.item],
-            item: ""
+            item: "",
+            id: this.state.id + 1
         })
+
+        console.log(this.state.id)
     }
  
     render() {
@@ -40,7 +43,7 @@ class ListContainer extends Component {
                     item={this.state.item}
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit} />
-                <ItemsList />
+                <ItemsList items={this.state.items} />
             </>
         );
     }
