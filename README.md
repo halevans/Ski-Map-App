@@ -14,7 +14,7 @@
 - [ ] Mark the item as complete/favourite/(watch, read, listen) later/flag/etc
 - [ ] Edit an item from a list
 - [ ] Remove an item from a list
-- [ ] Clear/delete all items
+- [x] Clear/delete all items
 - [ ] Clear/delete only marked items
 - [ ] Fetch data from at least one 3rd party API using Axios or fetch.
 - [x] Make frequent Git commits with descriptive messages, explaining your commit.

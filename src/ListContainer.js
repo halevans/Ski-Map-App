@@ -34,7 +34,6 @@ class ListContainer extends Component {
     }
 
     clearList = () => {
-
         if (window.confirm("Are you sure you want to clear the list?")) {
             this.setState({
                 items: []
