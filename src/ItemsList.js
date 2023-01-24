@@ -16,6 +16,13 @@ class ItemsList extends Component {
 
         return(
             <>
+                <button
+                    type="button"
+                    className="btn"
+                    onClick={this.props.clearList}
+                >
+                    Clear List
+                </button>
                 <h3>ItemsList</h3>
                 <ul>
                     {allItems}

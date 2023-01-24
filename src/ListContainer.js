@@ -90,10 +90,10 @@ class ListContainer extends Component {
                 <ListInput 
                     item={this.state.item}
                     handleChange={this.handleChange}
-                    handleSubmit={this.handleSubmit}
-                    clearList={this.clearList} />
+                    handleSubmit={this.handleSubmit} />
                 <ItemsList
                     items={this.state.items}
+                    clearList={this.clearList}
                     handleDelete={this.handleDelete}
                     handleEdit={this.handleEdit}
                     toggleSelect={this.toggleSelect} />
