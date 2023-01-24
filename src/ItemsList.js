@@ -23,6 +23,13 @@ class ItemsList extends Component {
                 >
                     Clear List
                 </button>
+                <button
+                    type="button"
+                    className="btn"
+                    onClick={this.props.deleteSelected}
+                >
+                    Delete Selected
+                </button>
                 <h3>ItemsList</h3>
                 <ul>
                     {allItems}

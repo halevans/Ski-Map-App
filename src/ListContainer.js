@@ -82,6 +82,15 @@ class ListContainer extends Component {
             items: editedItems
         });
     }
+
+    deleteSelected = () => {
+        const remainingItems = this.state.items.filter((item) => {
+            return item.selected === false;
+        });
+        this.setState({
+            items: remainingItems
+        });
+    }
  
     render() {
         return(
@@ -96,7 +105,8 @@ class ListContainer extends Component {
                     clearList={this.clearList}
                     handleDelete={this.handleDelete}
                     handleEdit={this.handleEdit}
-                    toggleSelect={this.toggleSelect} />
+                    toggleSelect={this.toggleSelect}
+                    deleteSelected={this.deleteSelected} />
             </>
         );
     }
