@@ -5,7 +5,10 @@ class ItemsList extends Component {
     render() {
 
         const allItems = this.props.items.map((item) => {
-            return <ListItem item={item.title} key={item.id} />
+            return <ListItem
+                        item={item.title}
+                        key={item.id}
+                        handleDelete={() => this.props.handleDelete(item.id)} />
         });
 
         return(

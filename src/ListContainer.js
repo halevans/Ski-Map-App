@@ -40,6 +40,15 @@ class ListContainer extends Component {
             });
         }
     }
+
+    handleDelete = (id) => {
+        const remainingItems = this.state.items.filter((item) => {
+            return item.id !== id
+        });
+        this.setState({
+            items: remainingItems
+        });
+    }
  
     render() {
         return(
@@ -51,7 +60,8 @@ class ListContainer extends Component {
                     handleSubmit={this.handleSubmit}
                     clearList={this.clearList} />
                 <ItemsList
-                    items={this.state.items} />
+                    items={this.state.items}
+                    handleDelete={this.handleDelete} />
             </>
         );
     }

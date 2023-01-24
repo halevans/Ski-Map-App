@@ -7,6 +7,9 @@ class ListItem extends Component {
                 <li>
                     <h6>{this.props.item}</h6>
                 </li>
+                <span onClick={this.props.handleDelete}>
+                    <p>Delete</p>
+                </span>
             </>
         );
     }
