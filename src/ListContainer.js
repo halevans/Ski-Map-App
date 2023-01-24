@@ -3,10 +3,18 @@ import ItemsList from "./ItemsList";
 import ListInput from "./ListInput";
 
 class ListContainer extends Component {
+    constructor(props) {
+        super(props)
+        this.state={
+            items: [],
+            id:0,
+            item: ''
+        }
+    } 
     render() {
         return(
             <>
-                Hello from ListContainer
+                <h2>ListContainer</h2>
                 <ListInput />
                 <ItemsList />
             </>
