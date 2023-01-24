@@ -17,6 +17,10 @@ class ListItem extends Component {
             this.setState({
                 backgroundColour: "rgb(255, 0, 0, 0.5)"
             })
+        } else {
+            this.setState({
+                backgroundColour: ""
+            })
         }
     }
 
