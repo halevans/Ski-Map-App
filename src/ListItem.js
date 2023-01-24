@@ -4,7 +4,9 @@ class ListItem extends Component {
     render() {
         return(
             <>
-                Hello from list item
+                <li>
+                    <h6>title</h6>
+                </li>
             </>
         );
     }

@@ -4,7 +4,13 @@ class ListInput extends Component {
     render() {
         return(
             <>
-                Hello from ListInput
+                <form>
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Add ski resort..." />
+                    <button type="submit" className="btn">Add item</button>
+                </form>
             </>
         );
     }

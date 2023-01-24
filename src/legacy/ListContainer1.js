@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ListItem from "../ListItem1";
+import ListItem from "./ListItem1";
 
 class ListContainer extends Component {
     constructor(props) {
