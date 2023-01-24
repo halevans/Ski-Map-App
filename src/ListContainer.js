@@ -23,16 +23,14 @@ class ListContainer extends Component {
         
         const newItem = {
             id: this.state.id,
-            item: this.state.item
+            title: this.state.item
         }
 
         this.setState({
-            items: [...this.state.items, this.state.item],
+            items: [...this.state.items, newItem],
             item: "",
             id: this.state.id + 1
-        })
-
-        console.log(this.state.id)
+        });
     }
  
     render() {

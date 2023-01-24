@@ -5,11 +5,11 @@ class ListItem extends Component {
         return(
             <>
                 <li>
-                    <h6>title</h6>
+                    <h6>{this.props.item}</h6>
                 </li>
             </>
         );
     }
 }
 
-export default ListItem;
+export default ListItem; 
