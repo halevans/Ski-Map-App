@@ -11,7 +11,7 @@
 ### Technical Requirements
 
 - [x] Add a new item to a list
-- [ ] Mark the item as complete/favourite/(watch, read, listen) later/flag/etc
+- [x] Mark the item as complete/favourite/(watch, read, listen) later/flag/etc
 - [ ] Edit an item from a list
 - [x] Remove an item from a list
 - [x] Clear/delete all items
