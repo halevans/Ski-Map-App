@@ -6,6 +6,7 @@ class ListItem extends Component {
         super(props);
         this.state = {
             showEditModal: false,
+            flagged: false,
             backgroundColour: ""
         }
     }
@@ -13,10 +14,12 @@ class ListItem extends Component {
     handleFlag = () => {
         if (this.state.backgroundColour === "") {
             this.setState({
+                flagged: true,
                 backgroundColour: "rgb(255, 0, 0, 0.5)"
             });
         } else {
             this.setState({
+                flagged: false,
                 backgroundColour: ""
             });
         }
@@ -36,9 +39,6 @@ class ListItem extends Component {
                 </li>
                 <span onClick={this.props.handleDelete}>
                     <p>Delete</p>
-                </span>
-                <span onClick={this.props.handleEdit}>
-                    <p>Edit</p>
                 </span>
                 <div>
                     <button onClick={this.toggleEditModal}>Edit</button>
