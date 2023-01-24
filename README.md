@@ -12,10 +12,10 @@
 
 - [x] Add a new item to a list
 - [x] Mark the item as complete/favourite/(watch, read, listen) later/flag/etc
-- [ ] Edit an item from a list
+- [x] Edit an item from a list
 - [x] Remove an item from a list
 - [x] Clear/delete all items
-- [ ] Clear/delete only marked items
+- [x] Clear/delete only marked items
 - [ ] Fetch data from at least one 3rd party API using Axios or fetch.
 - [x] Make frequent Git commits with descriptive messages, explaining your commit.
 
