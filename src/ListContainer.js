@@ -32,6 +32,15 @@ class ListContainer extends Component {
             id: this.state.id + 1
         });
     }
+
+    clearList = () => {
+
+        if (window.confirm("Are you sure you want to clear the list?")) {
+            this.setState({
+                items: []
+            });
+        }
+    }
  
     render() {
         return(
@@ -40,8 +49,10 @@ class ListContainer extends Component {
                 <ListInput 
                     item={this.state.item}
                     handleChange={this.handleChange}
-                    handleSubmit={this.handleSubmit} />
-                <ItemsList items={this.state.items} />
+                    handleSubmit={this.handleSubmit}
+                    clearList={this.clearList} />
+                <ItemsList
+                    items={this.state.items} />
             </>
         );
     }

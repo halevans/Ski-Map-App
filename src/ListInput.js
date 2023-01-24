@@ -17,6 +17,13 @@ class ListInput extends Component {
                         value={this.props.item} />
                     <button type="submit" className="btn">Add item</button>
                 </form>
+                <button
+                    type="button"
+                    className="btn"
+                    onClick={this.props.clearList}
+                >
+                    Clear List
+                </button>
             </>
         );
     }

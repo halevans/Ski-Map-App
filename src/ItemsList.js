@@ -14,12 +14,6 @@ class ItemsList extends Component {
                 <ul>
                     {allItems}
                 </ul>
-                <button
-                    type="button"
-                    className="btn"
-                >
-                    Clear List
-                </button>
             </>
         );
     }

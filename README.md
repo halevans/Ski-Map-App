@@ -10,14 +10,14 @@
 
 ### Technical Requirements
 
-- [ ] Add a new item to a list
+- [x] Add a new item to a list
 - [ ] Mark the item as complete/favourite/(watch, read, listen) later/flag/etc
 - [ ] Edit an item from a list
 - [ ] Remove an item from a list
 - [ ] Clear/delete all items
 - [ ] Clear/delete only marked items
 - [ ] Fetch data from at least one 3rd party API using Axios or fetch.
-- [ ] Make frequent Git commits with descriptive messages, explaining your commit.
+- [x] Make frequent Git commits with descriptive messages, explaining your commit.
 
 ### User Stories for minimum viable product (MVP)
 
