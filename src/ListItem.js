@@ -9,7 +9,6 @@ class ListItem extends Component {
     }
 
     handleFlag = () => {
-        console.log("flag")
         if (this.state.backgroundColour === "") {
             this.setState({
                 backgroundColour: "rgb(255, 0, 0, 0.5)"

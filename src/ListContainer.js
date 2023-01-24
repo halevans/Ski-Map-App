@@ -49,6 +49,10 @@ class ListContainer extends Component {
             items: remainingItems
         });
     }
+
+    handleEdit = (id) => {
+        console.log("edit");
+    }
  
     render() {
         return(
@@ -61,7 +65,8 @@ class ListContainer extends Component {
                     clearList={this.clearList} />
                 <ItemsList
                     items={this.state.items}
-                    handleDelete={this.handleDelete} />
+                    handleDelete={this.handleDelete}
+                    handleEdit={this.handleEdit} />
             </>
         );
     }
