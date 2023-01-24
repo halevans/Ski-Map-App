@@ -26,11 +26,11 @@ class ListContainer extends Component {
             title: this.state.item
         }
 
-        this.setState({
+        this.setState(prevState => ({
             items: [...this.state.items, newItem],
             item: "",
-            id: this.state.id + 1
-        });
+            id: prevState.id + 1
+        }));
     }
 
     clearList = () => {
@@ -50,8 +50,21 @@ class ListContainer extends Component {
         });
     }
 
-    handleEdit = (id) => {
-        console.log("edit");
+    handleEdit = (e, id) => {
+        e.preventDefault();
+
+        const editIndex = this.state.items.findIndex(x => x.id === id);
+        const editedItems = this.state.items.map((item, index) => {
+            if (index === editIndex) {
+                return {...item, title: e.target.text.value};
+            } else {
+                return item;
+            }
+        });
+
+        this.setState({
+            items: editedItems
+        });
     }
  
     render() {

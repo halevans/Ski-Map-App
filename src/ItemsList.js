@@ -6,10 +6,10 @@ class ItemsList extends Component {
 
         const allItems = this.props.items.map((item) => {
             return <ListItem
-                        item={item.title}
+                        title={item.title}
                         key={item.id}
                         handleDelete={() => this.props.handleDelete(item.id)}
-                        handleEdit={() => this.props.handleEdit(item.id)}
+                        handleEdit={(e) => this.props.handleEdit(e, item.id)}
                          />
         });
 
