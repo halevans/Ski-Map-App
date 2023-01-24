@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class ListItem extends Component {
+class ListInput extends Component {
     render() {
         return(
             <>
-                Hello from list item
+                Hello from ListInput
             </>
         );
     }
 }
 
-export default ListItem;
+export default ListInput;
