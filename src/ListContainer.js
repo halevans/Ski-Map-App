@@ -43,7 +43,7 @@ class ListContainer extends Component {
 
     handleDelete = (id) => {
         const remainingItems = this.state.items.filter((item) => {
-            return item.id !== id
+            return item.id !== id;
         });
         this.setState({
             items: remainingItems

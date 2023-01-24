@@ -1,6 +1,26 @@
 import React, { Component } from "react";
 
 class ListItem extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            backgroundColour: ""
+        }
+    }
+
+    handleFlag = () => {
+        console.log("flag")
+        if (this.state.backgroundColour === "") {
+            this.setState({
+                backgroundColour: "rgb(255, 0, 0, 0.5)"
+            });
+        } else {
+            this.setState({
+                backgroundColour: ""
+            });
+        }
+    }
+
     render() {
         return(
             <>
@@ -10,6 +30,11 @@ class ListItem extends Component {
                 <span onClick={this.props.handleDelete}>
                     <p>Delete</p>
                 </span>
+                <div
+                    onClick={this.handleFlag}
+                    style={{backgroundColor: this.state.backgroundColour}}>
+                    <p>Flag</p>
+                </div>
             </>
         );
     }
