@@ -8,7 +8,9 @@ class ItemsList extends Component {
             return <ListItem
                         item={item.title}
                         key={item.id}
-                        handleDelete={() => this.props.handleDelete(item.id)} />
+                        handleDelete={() => this.props.handleDelete(item.id)}
+                        handleEdit={() => this.props.handleEdit(item.id)}
+                         />
         });
 
         return(

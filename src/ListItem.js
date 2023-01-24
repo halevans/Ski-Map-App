@@ -29,6 +29,9 @@ class ListItem extends Component {
                 <span onClick={this.props.handleDelete}>
                     <p>Delete</p>
                 </span>
+                <span onClick={this.props.handleEdit}>
+                    <p>Edit</p>
+                </span>
                 <div
                     onClick={this.handleFlag}
                     style={{backgroundColor: this.state.backgroundColour}}>
