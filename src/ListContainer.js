@@ -23,7 +23,8 @@ class ListContainer extends Component {
         
         const newItem = {
             id: this.state.id,
-            title: this.state.item
+            title: this.state.item,
+            selected: false
         }
 
         this.setState(prevState => ({
@@ -66,6 +67,21 @@ class ListContainer extends Component {
             items: editedItems
         });
     }
+
+    toggleSelect = (id) => {
+        const editIndex = this.state.items.findIndex(x => x.id === id);
+        const editedItems = this.state.items.map((item, index) => {
+            if (index === editIndex) {
+                return {...item, selected: true};
+            } else {
+                return item;
+            }
+        });
+
+        this.setState({
+            items: editedItems
+        });
+    }
  
     render() {
         return(
@@ -79,7 +95,8 @@ class ListContainer extends Component {
                 <ItemsList
                     items={this.state.items}
                     handleDelete={this.handleDelete}
-                    handleEdit={this.handleEdit} />
+                    handleEdit={this.handleEdit}
+                    toggleSelect={this.toggleSelect} />
             </>
         );
     }

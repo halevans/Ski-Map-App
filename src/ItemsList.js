@@ -10,6 +10,7 @@ class ItemsList extends Component {
                         key={item.id}
                         handleDelete={() => this.props.handleDelete(item.id)}
                         handleEdit={(e) => this.props.handleEdit(e, item.id)}
+                        toggleSelect={() => this.props.toggleSelect(item.id)}
                          />
         });
 

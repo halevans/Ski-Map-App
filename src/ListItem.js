@@ -37,6 +37,10 @@ class ListItem extends Component {
                 <li>
                     <h6>{this.props.title}</h6>
                 </li>
+                <input 
+                type="checkbox"
+                onChange={this.props.toggleSelect}
+                />
                 <span onClick={this.props.handleDelete}>
                     <p>Delete</p>
                 </span>
