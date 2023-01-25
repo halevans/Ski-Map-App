@@ -6,10 +6,8 @@ class App extends Component {
     render () {
         return(
             <>
-            <h1>Ski App</h1>
-            <div className="container">
+                <h1>Ski App</h1>
                 <ListContainer />
-            </div>
             </>
         );
     }

@@ -1,5 +1,6 @@
 import EditModal from "./EditModal";
 import React, { Component } from "react";
+import { ListGroupItem } from "react-bootstrap";
 
 class ListItem extends Component {
     constructor(props) {
@@ -34,9 +35,9 @@ class ListItem extends Component {
     render() {
         return(
             <>
-                <li>
+                <ListGroupItem>
                     <h6>{this.props.title}</h6>
-                </li>
+                </ListGroupItem>
                 <input 
                 type="checkbox"
                 onChange={this.props.toggleSelect}

@@ -94,7 +94,8 @@ class ListContainer extends Component {
  
     render() {
         return(
-            <>
+            <div className="container">
+
                 <h2>ListContainer</h2>
                 <ListInput 
                     item={this.state.item}
@@ -107,7 +108,7 @@ class ListContainer extends Component {
                     handleEdit={this.handleEdit}
                     toggleSelect={this.toggleSelect}
                     deleteSelected={this.deleteSelected} />
-            </>
+            </div>
         );
     }
 }

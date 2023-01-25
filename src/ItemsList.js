@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ListGroup } from "react-bootstrap";
 import ListItem from "./ListItem";
 
 class ItemsList extends Component {
@@ -31,9 +32,9 @@ class ItemsList extends Component {
                     Delete Selected
                 </button>
                 <h3>ItemsList</h3>
-                <ul>
+                <ListGroup>
                     {allItems}
-                </ul>
+                </ListGroup>
             </>
         );
     }
