@@ -12,7 +12,7 @@ class App extends Component {
             <>
                 <NavBar/>
                 <Routes>
-                    <Route exact path="" element={<Home />} />
+                    <Route exact path="/" element={<Home />} />
                     <Route path="/favourites" element={<Favourites />} />
                     <Route path="/about" element={<About />} />
                 </Routes>
