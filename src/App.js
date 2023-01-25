@@ -4,26 +4,18 @@ import NavBar from "./NavBar";
 import Home from "./pages/Home";
 import Favourites from "./pages/Favourites";
 import About from "./pages/About";
+import { Route, Routes } from "react-router-dom";
 
 class App extends Component {
     render () {
-        let component;
-        switch (window.location.pathname) {
-            case "/":
-                component = <Home />;
-                break;
-            case "/favourites":
-                component = <Favourites />;
-                break;
-            case "/about":
-                component = <About />;
-                break;
-        }
-
         return(
             <>
                 <NavBar/>
-                {component}
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/favourites" element={<Favourites />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
             </>
         );
     }
