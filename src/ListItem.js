@@ -1,6 +1,6 @@
 import EditModal from "./EditModal";
 import React, { Component } from "react";
-import { ListGroupItem } from "react-bootstrap";
+import { Button, ListGroupItem } from "react-bootstrap";
 
 class ListItem extends Component {
     constructor(props) {
@@ -35,30 +35,37 @@ class ListItem extends Component {
     render() {
         return(
             <>
-                <ListGroupItem className="d-flex justify-content-between my-2">
-                    <h6>{this.props.title}</h6>
+                <ListGroupItem className="d-flex justify-content-between align-items-center my-2">
+                    <div className="text-wrap">
+                        {this.props.title}
+                    </div>
                     <div className="d-flex ml-auto">
-                            <input 
-                            type="checkbox"
-                            onChange={this.props.toggleSelect}
-                            />
-                            <div onClick={this.props.handleDelete}>
-                                <i className="fas fa-trash"></i>
-                            </div>
-                        <span>
-                                <button onClick={this.toggleEditModal}>Edit</button>
-                                {this.state.showEditModal && (
-                                <EditModal
-                                    text={this.state.text}
-                                    onSubmit={(e) => this.props.handleEdit(e)}
-                                    onClose={this.toggleEditModal}
-                                />
-                            )}
-                        </span>
+                        <input
+                        className="m-2"
+                        type="checkbox"
+                        onChange={this.props.toggleSelect}
+                        />
+
+                        <Button
+                            onClick={this.toggleEditModal} 
+                            variant="secondary">Edit</Button>
+                        {this.state.showEditModal && (
+                        <EditModal
+                            text={this.state.text}
+                            onSubmit={(e) => this.props.handleEdit(e)}
+                            onClose={this.toggleEditModal}
+                        />
+                        )}
+
                         <div
+                            className="btn"
                             onClick={this.handleFlag}
                             style={{backgroundColor: this.state.backgroundColour}}>
                             <i className="fas fa-flag"></i>
+                        </div>
+
+                        <div className="btn" onClick={this.props.handleDelete}>
+                            <i className="fas fa-trash"></i>
                         </div>
                     </div>
                 </ListGroupItem> 
