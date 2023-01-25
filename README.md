@@ -4,6 +4,8 @@
 
 ## Deployment link
 
+https://halevans.github.io/Ski-Map-App/
+
 ## Technologies Used
 
 ## Planning
@@ -16,7 +18,7 @@
 - [x] Remove an item from a list
 - [x] Clear/delete all items
 - [x] Clear/delete only marked items
-- [ ] Fetch data from at least one 3rd party API using Axios or fetch.
+- [x] Fetch data from at least one 3rd party API using Axios or fetch.
 - [x] Make frequent Git commits with descriptive messages, explaining your commit.
 
 ### User Stories for minimum viable product (MVP)
@@ -27,7 +29,7 @@
 - [x] As a user, I want to be able to remove an item from a list so that I don't have to see it any more
 - [x] As a user, I want to be able to clear/delete all items from the list so that I have a quick way of removing all items
 - [x] As a user, I want to be able to clear/delete only items that I have marked, so that I can delete some but not all items
-- [ ] As a user, I want to be able to view the map of a ski resort
+- [x] As a user, I want to be able to view the map of a ski resort
 
 ### Wireframes
 
