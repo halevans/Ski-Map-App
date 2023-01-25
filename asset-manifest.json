@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Ski-Map-App/static/css/main.44f8b8b5.css",
-    "main.js": "/Ski-Map-App/static/js/main.e89ed319.js",
+    "main.js": "/Ski-Map-App/static/js/main.703bf4de.js",
     "static/js/787.dca658e6.chunk.js": "/Ski-Map-App/static/js/787.dca658e6.chunk.js",
     "index.html": "/Ski-Map-App/index.html",
     "main.44f8b8b5.css.map": "/Ski-Map-App/static/css/main.44f8b8b5.css.map",
-    "main.e89ed319.js.map": "/Ski-Map-App/static/js/main.e89ed319.js.map",
+    "main.703bf4de.js.map": "/Ski-Map-App/static/js/main.703bf4de.js.map",
     "787.dca658e6.chunk.js.map": "/Ski-Map-App/static/js/787.dca658e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44f8b8b5.css",
-    "static/js/main.e89ed319.js"
+    "static/js/main.703bf4de.js"
   ]
 }
