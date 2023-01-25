@@ -1,13 +1,12 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 const EditModal = ({ text, onSubmit, onClose }) => (
     <div>
       <form onSubmit={onSubmit}>
         <input name="text" defaultValue={text} />
-        <button type="submit">Save</button>
-        <button type="button" onClick={onClose}>
-          Close
-        </button>
+        <Button type="submit" variant="secondary">Save</Button>
+        <Button type="button" onClick={onClose} variant="secondary">Close</Button>
       </form>
     </div>
   );
