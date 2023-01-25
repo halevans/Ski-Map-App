@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ListGroup } from "react-bootstrap";
+import { Button, ListGroup } from "react-bootstrap";
 import ListItem from "./ListItem";
 
 class ItemsList extends Component {
@@ -17,20 +17,12 @@ class ItemsList extends Component {
 
         return(
             <>
-                <button
-                    type="button"
-                    className="btn"
-                    onClick={this.props.clearList}
-                >
+                <Button onClick={this.props.clearList}>
                     Clear List
-                </button>
-                <button
-                    type="button"
-                    className="btn"
-                    onClick={this.props.deleteSelected}
-                >
+                </Button>{' '}
+                <Button onClick={this.props.deleteSelected}>
                     Delete Selected
-                </button>
+                </Button>{' '}
                 <h3>ItemsList</h3>
                 <ListGroup>
                     {allItems}
