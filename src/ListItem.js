@@ -35,31 +35,33 @@ class ListItem extends Component {
     render() {
         return(
             <>
-                <ListGroupItem>
+                <ListGroupItem className="d-flex justify-content-between my-2">
                     <h6>{this.props.title}</h6>
-                </ListGroupItem>
-                <input 
-                type="checkbox"
-                onChange={this.props.toggleSelect}
-                />
-                <span onClick={this.props.handleDelete}>
-                    <p>Delete</p>
-                </span>
-                <div>
-                    <button onClick={this.toggleEditModal}>Edit</button>
-                    {this.state.showEditModal && (
-                    <EditModal
-                        text={this.state.text}
-                        onSubmit={(e) => this.props.handleEdit(e)}
-                        onClose={this.toggleEditModal}
-                    />
-                    )}
-                </div>
-                <div
-                    onClick={this.handleFlag}
-                    style={{backgroundColor: this.state.backgroundColour}}>
-                    <p>Flag</p>
-                </div>
+                    <div className="d-flex ml-auto">
+                            <input 
+                            type="checkbox"
+                            onChange={this.props.toggleSelect}
+                            />
+                            <div onClick={this.props.handleDelete}>
+                                <i className="fas fa-trash"></i>
+                            </div>
+                        <span>
+                                <button onClick={this.toggleEditModal}>Edit</button>
+                                {this.state.showEditModal && (
+                                <EditModal
+                                    text={this.state.text}
+                                    onSubmit={(e) => this.props.handleEdit(e)}
+                                    onClose={this.toggleEditModal}
+                                />
+                            )}
+                        </span>
+                        <div
+                            onClick={this.handleFlag}
+                            style={{backgroundColor: this.state.backgroundColour}}>
+                            <i className="fas fa-flag"></i>
+                        </div>
+                    </div>
+                </ListGroupItem> 
             </>
         );
     }

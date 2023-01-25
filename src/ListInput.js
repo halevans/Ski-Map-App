@@ -9,10 +9,11 @@ class ListInput extends Component {
     render() {
         return(
             <>
-                    <i className="fas fa-book"/>
-
                 <form onSubmit={this.props.handleSubmit}>
                     <InputGroup className="mb-3">
+                        <div className="input-group-text bg-primary">
+                    <i className="fa-solid fa-person-skiing text-white"/>
+                        </div>
                     <input
                         type="text"
                         className="form-control"
