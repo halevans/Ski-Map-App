@@ -21,12 +21,12 @@
 
 ### User Stories for minimum viable product (MVP)
 
-- [ ] As a user, I want to add a new location to a list so that I can look it up at a later date
-- [ ] As a user, I want to flag the location as complete so that I know I have looked it up
-- [ ] As a user, I want to be able to edit an item on the list so that I can amend spelling mistakes
-- [ ] As a user, I want to be able to remove an item from a list so that I don't have to see it any more
-- [ ] As a user, I want to be able to clear/delete all items from the list so that I have a quick way of removing all items
-- [ ] As a user, I want to be able to clear/delete only items that I have marked, so that I can delete some but not all items
+- [x] As a user, I want to add a new location to a list so that I can look it up at a later date
+- [x] As a user, I want to flag the location as complete so that I know I have looked it up
+- [x] As a user, I want to be able to edit an item on the list so that I can amend spelling mistakes
+- [x] As a user, I want to be able to remove an item from a list so that I don't have to see it any more
+- [x] As a user, I want to be able to clear/delete all items from the list so that I have a quick way of removing all items
+- [x] As a user, I want to be able to clear/delete only items that I have marked, so that I can delete some but not all items
 - [ ] As a user, I want to be able to view the map of a ski resort
 
 ### Wireframes
