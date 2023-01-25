@@ -35,7 +35,7 @@ class ListItem extends Component {
     render() {
         return(
             <>
-                <ListGroupItem className="d-flex justify-content-between align-items-center my-2">
+                <ListGroupItem className="d-flex justify-content-between align-items-center">
                     <div className="text-wrap">
                         {this.props.title}
                     </div>
