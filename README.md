@@ -73,9 +73,7 @@ Pages are denoted in __bold__.
 - __Favourites__: this is the favourites route
 - __About__: this route displays static text about the idea and the inspiration behind the app
 
-![React Components hierarchy](/images/React%20Components%201.png)
-
-![React Components hierarchy](/images/React%20Components%202.png)
+![React Components hierarchy](/images/React-components.png)
 
 ### Challenges
 
