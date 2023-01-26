@@ -21,6 +21,7 @@ class MapModal extends Component {
             </Modal.Header>
             <Modal.Body>
                 <img className="img-fluid" src={this.props.skiMap.media.image.url}/>
+                <p></p>
                 <h6>Year Published: {this.props.skiMap.metadata.year_published}</h6>
                 <p>
                     Official Website: <a href={this.props.skiArea.official_website}>{this.props.skiArea.official_website}</a>

@@ -35,10 +35,9 @@ class Home extends Component {
     render() {
         return(
             <>
-                <h1>Home!</h1>
+                <ListContainer />
                 <Search />
                 <MapCardGrid skiArea={this.state.skiArea} />
-                <ListContainer />
             </>
         );
     }

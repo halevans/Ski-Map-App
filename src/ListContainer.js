@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Container } from "react-bootstrap";
 import ItemsList from "./ItemsList";
 import ListInput from "./ListInput";
 
@@ -94,8 +95,7 @@ class ListContainer extends Component {
  
     render() {
         return(
-            <div className="container">
-                <h2>ListContainer</h2>
+            <Container className="mt-2">
                 <ListInput 
                     item={this.state.item}
                     handleChange={this.handleChange}
@@ -107,7 +107,7 @@ class ListContainer extends Component {
                     handleEdit={this.handleEdit}
                     toggleSelect={this.toggleSelect}
                     deleteSelected={this.deleteSelected} />
-            </div>
+            </Container>
         );
     }
 }

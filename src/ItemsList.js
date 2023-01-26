@@ -23,8 +23,7 @@ class ItemsList extends Component {
                 <Button onClick={this.props.deleteSelected}>
                     Delete Selected
                 </Button>{' '}
-                <h3>ItemsList</h3>
-                <ListGroup>
+                <ListGroup className="mt-2">
                     {allItems}
                 </ListGroup>
             </>

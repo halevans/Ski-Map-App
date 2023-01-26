@@ -5,7 +5,7 @@ class Search extends Component {
     render() {
         return(
             <>
-                <Container>
+                <Container className="mt-2 mb-2">
                     <Form className="d-flex">
                         <Form.Control
                         type="search"
