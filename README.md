@@ -2,13 +2,17 @@
 
 ## Description
 
-The
+The Ski Map App was originally intended to be a resource to search for ski maps, new and old, for ski resorts around the world. Additionally, a user can enter a ski resort in a 'to-do list' form, to remind them to look up the map at a later date.
+
+The app is currently limited to Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche) region only (#id 987 in the API) for build and testing purposes
 
 ## Deployment link
 
 https://ski-map-app.netlify.app/
 
 ## Technologies Used
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=halevans)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Planning
 
