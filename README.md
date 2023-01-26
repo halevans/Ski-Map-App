@@ -4,6 +4,8 @@
 
 The Ski Map App was originally intended to be a resource to search for ski maps, new and old, for ski resorts around the world. Additionally, a user can enter a ski resort in a 'to-do list' form, to remind them to look up the map at a later date.
 
+The data used for the app was sourced from [Skimap.org](https://skimap.org/)
+
 The app is currently limited to Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche) region only (#id 987 in the API) for build and testing purposes
 
 ## Deployment link
@@ -12,7 +14,11 @@ https://ski-map-app.netlify.app/
 
 ## Technologies Used
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=halevans&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+This project was built using ![React.js](https://reactjs.org/). It additionally utilised:
+
+- [React Bootstrap](https://react-bootstrap.github.io/) - for styling
+- [npm](https://www.npmjs.com/) - package manager
+- [netlify](https://www.netlify.com/) - to host the single page app
 
 ## Planning
 
@@ -79,6 +85,8 @@ https://ski-map-app.netlify.app/
 - Deploying to GitHib Pages instead of Netlify. Following these instructions almost got it working. Just needed to amend navigation errors (i.e. it would chop off `/Ski-Map-App`
     - https://stackoverflow.com/questions/72251483/home-component-is-not-rendering-when-the-app-loads-on-github-pages-but-loading-o
     - https://github.com/rafgraph/spa-github-pages#usage-instructions
+- Amending the Search component to include autocomplete based off the SkiArea names
+    - https://blog.logrocket.com/create-customizable-react-search-component-autocomplete/
 
 ## Outstanding Queries
 
