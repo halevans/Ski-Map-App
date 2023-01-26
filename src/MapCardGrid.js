@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Container, Row } from "react-bootstrap";
 import MapCard from "./MapCard";
 
 class MapCardGrid extends Component {
@@ -18,10 +19,11 @@ class MapCardGrid extends Component {
         } 
 
         return(
-            <>
-                {/* <MapCard skiMap={this.props.skiArea}/> */}
-                {allMaps}
-            </>
+            <Container>
+                <Row>
+                    {allMaps}
+                </Row>
+            </Container>
         );
     }
 }

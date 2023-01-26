@@ -38,9 +38,6 @@ class Home extends Component {
                 <h1>Home!</h1>
                 <Search />
                 <MapCardGrid skiArea={this.state.skiArea} />
-                <h6>Example Map of Zermatt from API:</h6>
-                {!this.state.skiArea && <p>Loading...</p>}
-                {this.state.skiArea && <img width="500px" src={this.state.skiArea.ski_maps[0].media.image.url}/>}
                 <ListContainer />
             </>
         );
