@@ -20,7 +20,7 @@ class MapCardGrid extends Component {
 
         return(
             <Container>
-                <Row>
+                <Row className="d-flex justify-content-center ">
                     {allMaps}
                 </Row>
             </Container>
