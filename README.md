@@ -4,7 +4,7 @@
 
 ## Deployment link
 
-https://halevans.github.io/Ski-Map-App/
+https://ski-map-app.netlify.app/
 
 ## Technologies Used
 
