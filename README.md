@@ -60,15 +60,18 @@ This project was built using [React.js](https://reactjs.org/). It additionally u
 Pages are denoted in __bold__.
 
 - __App__: top-level component
+- __NavBar__: provides a consistent component using React Bootstrap to navigate between pages
 - __Home__: this is the Home route, the homepage of the app
-- ListContainer: this is a container that renders the individual list items
-- ListInput: this component contains the form that the user needs to fill in order to add items to the list. It includes an edit box for the input and a submit button
-- ItemsList: this component contains the list of the individual ListItems
-- ListItem: displays a single item that the user has entered. It contains the item text, and and buttons to select item, edit item (which calls the EditModal component), flag item, and delete the individual item
-- EditModal: brings up the option to edit the items in the list
-- EditModal: brings up the option to edit the items in the list
-- Favourites: this is the favourites route
-- __About__: this is the about route
+    - ListContainer: this is a container that renders the individual list items
+    - ListInput: this component contains the form that the user needs to fill in order to add items to the list. It includes an edit box for the input and a submit button
+        - ItemsList: this component contains the list of the individual ListItems
+            - ListItem: displays a single item that the user has entered. It contains the item text, and and buttons to select item, edit item (which calls the EditModal component), flag item, and delete the individual item
+                - EditModal: brings up the option to edit the items in the list
+    - MapCardGrid: a container for a grip of MapCards
+        - MapCard: this renders one card per SkiArea Map, and displays a thumbnail of the ski area map
+            - MapModal: when a card is clicked on, it opens a near full-screen resolution image of the thumbnail map rendered in MapCard
+- __Favourites__: this is the favourites route
+- __About__: this route displays static text about the idea and the inspiration behind the app
 
 
 ### Challenges
