@@ -4,9 +4,9 @@
 
 The Ski Map App was originally intended to be a resource to search for ski maps, new and old, for ski resorts around the world. Additionally, a user can enter a ski resort in a 'to-do list' form, to remind them to look up the map at a later date.
 
-The data used for the app was sourced from [Skimap.org](https://skimap.org/)
+The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
-The app is currently limited to Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche) region only (#id 987 in the API) for build and testing purposes
+The app is currently limited to Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche) region only (#id 987 in the API) for build and testing purposes.
 
 ## Deployment link
 
@@ -14,7 +14,7 @@ https://ski-map-app.netlify.app/
 
 ## Technologies Used
 
-This project was built using ![React.js](https://reactjs.org/). It additionally utilised:
+This project was built using [React.js](https://reactjs.org/). It additionally utilised:
 
 - [React Bootstrap](https://react-bootstrap.github.io/) - for styling
 - [npm](https://www.npmjs.com/) - package manager
@@ -57,15 +57,18 @@ This project was built using ![React.js](https://reactjs.org/). It additionally 
 
 ### Component Structure
 
-> __App__: top-level component; where data is fetched from the API
->
-> __--Favourites__: this is the favourites route -- the build of the app will start here to complete the MVP for the list items under "Quick Add"
->
-> __---ListContainer__: this is a container that renders the individual list items
->
-> __----SubmitForm__: this component contains the form that the user needs to fill in order to add one task to the list. It includes an edit box for the input and a submit button
->
-> __----ListItem__: displays a single item that the user has entered. It contains the item text, and BUTTONS...
+Pages are denoted in __bold__.
+
+- __App__: top-level component
+- __Home__: this is the Home route, the homepage of the app
+- ListContainer: this is a container that renders the individual list items
+- ListInput: this component contains the form that the user needs to fill in order to add items to the list. It includes an edit box for the input and a submit button
+- ItemsList: this component contains the list of the individual ListItems
+- ListItem: displays a single item that the user has entered. It contains the item text, and and buttons to select item, edit item (which calls the EditModal component), flag item, and delete the individual item
+- EditModal: brings up the option to edit the items in the list
+- EditModal: brings up the option to edit the items in the list
+- Favourites: this is the favourites route
+- __About__: this is the about route
 
 
 ### Challenges
