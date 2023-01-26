@@ -10,7 +10,7 @@ class MapCard extends Component {
         return(
             <>
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={this.props.map} />
+                    <Card.Img variant="top" src={this.props.map[0]} />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
