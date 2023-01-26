@@ -10,21 +10,20 @@ class MapModal extends Component {
         return (
             <Modal
                 {...this.props}
-                size="lg"
+                size="xl"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Modal heading
+                    {this.props.skiArea.name}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <h4>Centered Modal</h4>
+                <img className="img-fluid" src={this.props.skiMap.media.image.url}/>
+                <h6>Year Published: {this.props.skiMap.metadata.year_published}</h6>
                 <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                    consectetur ac, vestibulum at eros.
+                    Official Website: <a href={this.props.skiArea.official_website}>{this.props.skiArea.official_website}</a>
                 </p>
             </Modal.Body>
                 <Modal.Footer>

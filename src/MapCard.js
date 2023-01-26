@@ -37,6 +37,8 @@ class MapCard extends Component {
                         <MapModal
                             show={this.state.mapModalShow}
                             onHide={this.toggleModalShow}
+                            skiMap={this.props.skiMap}
+                            skiArea={this.props.skiArea}
                         />
                     </Card.Body>
                 </Card>
