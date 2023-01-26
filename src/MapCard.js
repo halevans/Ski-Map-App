@@ -10,13 +10,13 @@ class MapCard extends Component {
         return(
             <>
                 <Card style={{ width: '18rem' }}>
-                    {this.props.skiArea && <Card.Img variant="top" src={this.props.skiArea.ski_maps[0].media.sizes[4].url} />}
+                    {this.props.skiMap && <Card.Img variant="top" src={this.props.skiMap.media.sizes[4].url} />}
                     <Card.Body>
                         {this.props.skiArea && <Card.Title>{this.props.skiArea.name}</Card.Title>}
-                        {this.props.skiArea && <Card.Subtitle>Year Published: {this.props.skiArea.ski_maps[0].metadata.year_published}</Card.Subtitle>}
+                        {this.props.skiMap && <Card.Subtitle>Year Published: {this.props.skiMap.metadata.year_published}</Card.Subtitle>}
                         {/* <Button variant="primary">Go somewhere</Button> */}
                     </Card.Body>
-                    </Card>
+                </Card>
             </>
         );
     }

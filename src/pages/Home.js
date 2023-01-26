@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import ListContainer from "../ListContainer";
-import MapCard from "../MapCard";
+import MapCardGrid from "../MapCardGrid";
 import Search from "../Search";
 
 class Home extends Component {
@@ -37,7 +37,7 @@ class Home extends Component {
             <>
                 <h1>Home!</h1>
                 <Search />
-                <MapCard skiArea={this.state.skiArea} />
+                <MapCardGrid skiArea={this.state.skiArea} />
                 <h6>Example Map of Zermatt from API:</h6>
                 {!this.state.skiArea && <p>Loading...</p>}
                 {this.state.skiArea && <img width="500px" src={this.state.skiArea.ski_maps[0].media.image.url}/>}
