@@ -17,11 +17,10 @@ class Home extends Component {
       
         axios.get(url)
             .then((response) => {
-                console.log(response)
                 // handle success
                 // console.log(response)
                 this.setState({
-                    skiArea: response.data.ski_maps
+                    skiArea: response.data
                 })
             })
             .catch((error) => {
@@ -34,16 +33,14 @@ class Home extends Component {
       }
 
     render() {
-        let map = this.state.skiArea && this.state.skiArea[0].media.sizes[4].url
-
         return(
             <>
                 <h1>Home!</h1>
                 <Search />
-                <MapCard map={map} />
+                <MapCard skiArea={this.state.skiArea} />
                 <h6>Example Map of Zermatt from API:</h6>
                 {!this.state.skiArea && <p>Loading...</p>}
-                {this.state.skiArea && <img width="500px" src={this.state.skiArea[0].media.image.url}/>}
+                {this.state.skiArea && <img width="500px" src={this.state.skiArea.ski_maps[0].media.image.url}/>}
                 <ListContainer />
             </>
         );
