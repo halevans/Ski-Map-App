@@ -5,7 +5,6 @@ class Favourites extends Component {
     render() {
         return(
             <>
-                <h1>Favourites Page</h1>
                 <ListContainer />
             </>
         );

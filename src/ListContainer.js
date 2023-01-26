@@ -95,7 +95,7 @@ class ListContainer extends Component {
  
     render() {
         return(
-            <Container className="mt-2">
+            <Container className="p-2 mt-2 border rounded bg-light">
                 <ListInput 
                     item={this.state.item}
                     handleChange={this.handleChange}

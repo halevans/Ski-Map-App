@@ -2,6 +2,8 @@
 
 ## Description
 
+The
+
 ## Deployment link
 
 https://ski-map-app.netlify.app/
@@ -69,6 +71,10 @@ https://ski-map-app.netlify.app/
 ## Final Product
 
 ## Future Improvements
+
+- Deploying to GitHib Pages instead of Netlify. Following these instructions almost got it working. Just needed to amend navigation errors (i.e. it would chop off `/Ski-Map-App`
+    - https://stackoverflow.com/questions/72251483/home-component-is-not-rendering-when-the-app-loads-on-github-pages-but-loading-o
+    - https://github.com/rafgraph/spa-github-pages#usage-instructions
 
 ## Outstanding Queries
 
