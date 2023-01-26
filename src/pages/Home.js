@@ -36,7 +36,7 @@ class Home extends Component {
         return(
             <>
                 <ListContainer />
-                <Search />
+                {/* <Search /> */}
                 <MapCardGrid skiArea={this.state.skiArea} />
             </>
         );
