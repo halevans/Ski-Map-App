@@ -22,7 +22,7 @@ class MapModal extends Component {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <img className="img-fluid" src={this.props.skiMap.media.image.url}/>
+                <img className="img-fluid" src={this.props.skiMap.media.sizes[0].url}/>
                 <p></p>
                 <h6>Year Published: {this.props.skiMap.metadata.year_published}</h6>
                 <p>

@@ -119,9 +119,9 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/). Be
     - It appears to be due to conflict between the `e.stopPropagation()` and the fact that no event is passed to the method
     - The `closeButton` property could be removed from MapModal to rectify this from a UI perspective while a solution is found
 - On clicking on a Map (i.e. opening MapModal component) the console provides a warning of `React does not recognize the 'skiMap' prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase 'skimap' instead. If you accidentally passed it from a parent component, remove it from the DOM element.`
-- The prop for the high-resolution `img` for the MapModal should be `{this.props.skiMap.media.original.url}`, rather than `{this.props.skiMap.media.image.url}.`
+- The prop for the high-resolution `img` for the MapModal should be `{this.props.skiMap.media.original.url}`, rather than `{this.props.skiMap.media.sizes[0].url}.`
     - The images do not load due to a CORBs issue: `Cross-Origin Read Blocking (CORB) blocked cross-origin response https://skimap.org/data/987/3535/1669939931.pdf with MIME type application/pdf.`
-    - Using `media.image.url` instead renders an image, however not all elements in the skiMap array have entries for `media.image.url` (i.e. some are null), whereas for `media.original.url` do -- the CORBs issue should therefore be investigated
+    - Using `media.sizes[0].url` instead renders an image, however not as high a resolution compared to `media.original.url` -- the CORBs issue should therefore be investigated
 
 ## Final Product
 
