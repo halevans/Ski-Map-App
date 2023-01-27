@@ -86,8 +86,6 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
 ### Noteworthy Functions
 
-### Key Learnings/Takeaways
-
 ### Bugs
 
 - The "X" close button symbol in the top right of the MapModal (i.e. the pop-up when you click on a resort card) does not work -- closing must be done using the "Close" button in the bottom right of the pop-up
@@ -100,6 +98,18 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
 ## Final Product
 
+### Home Page
+
+![Home Page](/src/images/final-Home-page.png)
+
+### Modal Page
+
+![Modal Page](/src/images/final-Modal-page.png)
+
+### Comments Section
+
+![Modal Comments Section](/src/images/final-Comments-section.png)
+
 ## Future Improvements
 
 - Incorporating a larger API database. Currently, the data is limited to Zermatt only for building, testing and for loading speed purposes (the [full list of every ski area on the site](https://skimap.org/SkiAreas/index.json) > 5 seconds to load each time)
@@ -110,5 +120,3 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
     - https://blog.logrocket.com/create-customizable-react-search-component-autocomplete/
 - Favourites icon on cards, and update Favourites page with favourited items
 - Change the comment section underneath the ModalMap to be a review section. This could be linked with a database to store the information
-
-## Outstanding Queries
