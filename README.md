@@ -153,3 +153,4 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/). Be
     - https://blog.logrocket.com/create-customizable-react-search-component-autocomplete/
 - Favourites icon on cards, and update Favourites page with favourited items
 - Change the comment section underneath the ModalMap to be a review section. This could be linked with a database to store the information
+- A way to zoom in on the MapModal map image
