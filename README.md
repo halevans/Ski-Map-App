@@ -80,6 +80,26 @@ First off, the UI was broken into a component hierarchy. This was done using bot
 
 The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
+``` json
+{
+    id: "987",
+    name: "Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche)",
+    opening_year: 1936,
+    official_website: "http://bergbahnen.zermatt.ch/",
+    owner: "",
+    terrain_park: "Yes",
+    night_skiing: "Unknown",
+    operating_status: "Operating",
+    latitude: 45.942496045578,
+    longitude: 7.7092856168747,
+    user: { ... },
+    tags: [ ... ],
+    ski_maps: [ ... ],
+    created: "2018-05-12T07:31:22+00:00",
+    regions: [ ... ]
+}
+```
+
 ### Bugs
 
 - The "X" close button symbol in the top right of the MapModal (i.e. the pop-up when you click on a resort card) does not work -- closing must be done using the "Close" button in the bottom right of the pop-up
