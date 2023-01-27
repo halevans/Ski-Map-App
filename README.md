@@ -2,7 +2,7 @@
 
 ## Description
 
-The Ski Map App was originally intended to be a resource to search for ski maps, new and old, for ski resorts around the world. Additionally, a user can enter a ski resort in a 'to-do list' form, to remind them to look up the map at a later date.
+The Ski Map App is a resource to find ski maps of a particular resort over different publishing years. It was originally intended to be a resource to search for ski maps, new and old, for ski resorts around the world. Additionally, a user can enter a ski resort in a 'to-do list' form, to remind them to look up the map at a later date.
 
 The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
@@ -47,17 +47,17 @@ This project was built using [React.js](https://reactjs.org/). It additionally u
 
 #### Home
 
-![Wireframe for Home](/images/Home.png)
+![Wireframe for Home](/src/images/Home.png)
 
 #### Favourites
 
-![Wireframe for Favourites](/images/Favourites.png)
+![Wireframe for Favourites](/src/images/Favourites.png)
 
 ## Build/Code Process
 
 ### Component Structure and Hierarchy
 
-Pages are denoted in __bold__.
+First off, the UI was broken into a component hierarchy. This was done using both text for the components as below, and also images with boxes drawn around each component as at the end of this section. Pages are denoted in __bold__.
 
 - __App__: top-level component
 - __NavBar__: provides a consistent component using React Bootstrap to navigate between pages
@@ -74,7 +74,7 @@ Pages are denoted in __bold__.
 - __Favourites__: this is the favourites route
 - __About__: this route displays static text about the idea and the inspiration behind the app
 
-![React Components hierarchy](/images/React-components.png)
+![React Components hierarchy](/src/images/React-components.png)
 
 ### API
 
@@ -109,5 +109,6 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 - Amending the Search component to include autocomplete based off the SkiArea names
     - https://blog.logrocket.com/create-customizable-react-search-component-autocomplete/
 - Favourites icon on cards, and update Favourites page with favourited items
+- Change the comment section underneath the ModalMap to be a review section. This could be linked with a database to store the information
 
 ## Outstanding Queries
