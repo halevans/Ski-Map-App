@@ -17,7 +17,7 @@ class ListInput extends Component {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Add ski resort..."
+                        placeholder={this.props.textPreview}
                         onChange={this.props.handleChange}
                         value={this.props.item} />
                     <button type="submit" className="btn btn-primary">Add item</button>

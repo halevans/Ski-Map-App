@@ -87,6 +87,9 @@ Pages are denoted in __bold__.
 
 ### Bugs
 
+- The "X" close button symbol in the top right of the MapModal (i.e. the pop-up when you click on a resort card) does not work -- closing must be done using the "Close" button in the bottom right of the pop-up.
+    - It appears to be due to conflict between the `e.stopPropagation()` and the fact that no event is passed to the method.
+
 ## Final Product
 
 ## Future Improvements

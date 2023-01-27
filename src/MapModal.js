@@ -26,15 +26,15 @@ class MapModal extends Component {
                 <p></p>
                 <h6>Year Published: {this.props.skiMap.metadata.year_published}</h6>
                 <p>
-                    <i class="fa-solid fa-calendar-plus"></i> Opening Year: {this.props.skiArea.opening_year}
+                    <i className="fa-solid fa-calendar-plus"></i> Opening Year: {this.props.skiArea.opening_year}
                 <br/>
-                    <i class="fa-solid fa-location-dot"></i> Latitude: {this.props.skiArea.latitude}; Longitude: {this.props.skiArea.longitude}
+                    <i className="fa-solid fa-location-dot"></i> Latitude: {this.props.skiArea.latitude}; Longitude: {this.props.skiArea.longitude}
                 <br/>
-                    <i class="fa-solid fa-globe"></i> Official Website: <a href={this.props.skiArea.official_website}>{this.props.skiArea.official_website}</a>
+                    <i className="fa-solid fa-globe"></i> Official Website: <a href={this.props.skiArea.official_website}>{this.props.skiArea.official_website}</a>
                 </p>
             </Modal.Body>
             <Modal.Body>
-                <ListContainer />
+                <ListContainer textPreview="Enter a comment here"/>
             </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.props.onHide}>Close</Button>

@@ -35,7 +35,7 @@ class Home extends Component {
     render() {
         return(
             <>
-                <ListContainer />
+                <ListContainer textPreview="Add ski resort to remind you to look it up later..."/>
                 {/* <Search /> */}
                 <MapCardGrid skiArea={this.state.skiArea} />
             </>

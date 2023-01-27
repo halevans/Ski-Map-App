@@ -99,7 +99,8 @@ class ListContainer extends Component {
                 <ListInput 
                     item={this.state.item}
                     handleChange={this.handleChange}
-                    handleSubmit={this.handleSubmit} />
+                    handleSubmit={this.handleSubmit}
+                    textPreview={this.props.textPreview} />
                 <ItemsList
                     items={this.state.items}
                     clearList={this.clearList}

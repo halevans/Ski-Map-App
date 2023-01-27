@@ -11,7 +11,6 @@ class MapCard extends Component {
     }
 
     toggleModalOpen = () => {
-        console.log("opening")
         this.setState({
             mapModalShow: true
         });
@@ -19,7 +18,6 @@ class MapCard extends Component {
 
     toggleModalClose = (e) => {
         e.stopPropagation();
-        console.log("closing")
         this.setState({
             mapModalShow: false
         });
