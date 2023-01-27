@@ -110,6 +110,10 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
 ![Modal Comments Section](/src/images/final-Comments-section.png)
 
+### Mobile View
+
+![Mobile view](/src/images/final-mobile.png)
+
 ## Future Improvements
 
 - Incorporating a larger API database. Currently, the data is limited to Zermatt only for building, testing and for loading speed purposes (the [full list of every ski area on the site](https://skimap.org/SkiAreas/index.json) > 5 seconds to load each time)
