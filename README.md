@@ -14,11 +14,11 @@ https://ski-map-app.netlify.app/
 
 ## Technologies Used
 
-This project was built using [React.js](https://reactjs.org/). It additionally utilised:
+This project was built using [`React.js`](https://reactjs.org/). It additionally utilised:
 
-- [React Bootstrap](https://react-bootstrap.github.io/) - for styling
-- [npm](https://www.npmjs.com/) - package manager
-- [netlify](https://www.netlify.com/) - to host the single page app
+- [`React Bootstrap`](https://react-bootstrap.github.io/) - for styling
+- [`npm`](https://www.npmjs.com/) - package manager
+- [`netlify`](https://www.netlify.com/) - to host the single page app
 
 ## Planning
 
@@ -80,12 +80,6 @@ First off, the UI was broken into a component hierarchy. This was done using bot
 
 The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
-### Challenges
-
-### Wins
-
-### Noteworthy Functions
-
 ### Bugs
 
 - The "X" close button symbol in the top right of the MapModal (i.e. the pop-up when you click on a resort card) does not work -- closing must be done using the "Close" button in the bottom right of the pop-up
@@ -117,6 +111,8 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 ## Future Improvements
 
 - Incorporating a larger API database. Currently, the data is limited to Zermatt only for building, testing and for loading speed purposes (the [full list of every ski area on the site](https://skimap.org/SkiAreas/index.json) > 5 seconds to load each time)
+- Adding a Search component to filter through the cards for the different area and/or years
+- Adding a Favourite button to the MapCards, and showing these on the Favourites page
 - Deploying to GitHib Pages instead of Netlify. Following these instructions almost got it working. Just needed to amend navigation errors (i.e. it would chop off `/Ski-Map-App`
     - https://stackoverflow.com/questions/72251483/home-component-is-not-rendering-when-the-app-loads-on-github-pages-but-loading-o
     - https://github.com/rafgraph/spa-github-pages#usage-instructions
