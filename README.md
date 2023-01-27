@@ -70,12 +70,16 @@ Pages are denoted in __bold__.
     - MapCardGrid: a container for a grip of MapCards
         - MapCard: this renders one card per SkiArea Map, and displays a thumbnail of the ski area map
             - MapModal: when a card is clicked on, it opens a near full-screen resolution image of the thumbnail map rendered in MapCard
+                - ListContainer as above is then repeated as a child of MapModal for users to leave comments on particular maps
 - __Favourites__: this is the favourites route
 - __About__: this route displays static text about the idea and the inspiration behind the app
 
 ![React Components hierarchy](/images/React-components.png)
 
 ### API
+
+The data used for the app was sourced from [Skimap.org](https://skimap.org/).
+
 
 ### Challenges
 
@@ -89,6 +93,10 @@ Pages are denoted in __bold__.
 
 - The "X" close button symbol in the top right of the MapModal (i.e. the pop-up when you click on a resort card) does not work -- closing must be done using the "Close" button in the bottom right of the pop-up.
     - It appears to be due to conflict between the `e.stopPropagation()` and the fact that no event is passed to the method.
+- On clicking on a Map (i.e. opening MapModal component) the console provides a warning of `React does not recognize the 'skiMap' prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase 'skimap' instead. If you accidentally passed it from a parent component, remove it from the DOM element`.
+- The prop for the high-resolution `img` for the MapModal should be `{this.props.skiMap.media.original.url}`, rather than `{this.props.skiMap.media.image.url}`.
+    - The images doesn't load due to a CORBs issue: `Cross-Origin Read Blocking (CORB) blocked cross-origin response https://skimap.org/data/987/3535/1669939931.pdf with MIME type application/pdf.`
+    - Using `media.image.url` instead renders an image, however not all elements in the skiMap array have entries for `media.image.url` (i.e. some are null), whereas for `media.original.url` do -- the CORBs issue should therefore be investigated.
 
 ## Final Product
 
