@@ -1,4 +1,4 @@
-# Ski App
+# Ski Map App
 
 ## Description
 
@@ -8,7 +8,7 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
 The app is currently limited to Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche) region only (#id 987 in the API) for build and testing purposes.
 
-## Deployment link
+## Deployment Link
 
 https://ski-map-app.netlify.app/
 
@@ -30,8 +30,8 @@ This project was built using [React.js](https://reactjs.org/). It additionally u
 - [x] Remove an item from a list
 - [x] Clear/delete all items
 - [x] Clear/delete only marked items
-- [x] Fetch data from at least one 3rd party API using Axios or fetch.
-- [x] Make frequent Git commits with descriptive messages, explaining your commit.
+- [x] Fetch data from at least one 3rd party API using Axios or fetch
+- [x] Make frequent Git commits with descriptive messages, explaining your commit
 
 ### User Stories for minimum viable product (MVP)
 
@@ -80,7 +80,6 @@ Pages are denoted in __bold__.
 
 The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
-
 ### Challenges
 
 ### Wins
@@ -91,17 +90,19 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
 ### Bugs
 
-- The "X" close button symbol in the top right of the MapModal (i.e. the pop-up when you click on a resort card) does not work -- closing must be done using the "Close" button in the bottom right of the pop-up.
-    - It appears to be due to conflict between the `e.stopPropagation()` and the fact that no event is passed to the method.
-- On clicking on a Map (i.e. opening MapModal component) the console provides a warning of `React does not recognize the 'skiMap' prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase 'skimap' instead. If you accidentally passed it from a parent component, remove it from the DOM element`.
-- The prop for the high-resolution `img` for the MapModal should be `{this.props.skiMap.media.original.url}`, rather than `{this.props.skiMap.media.image.url}`.
-    - The images doesn't load due to a CORBs issue: `Cross-Origin Read Blocking (CORB) blocked cross-origin response https://skimap.org/data/987/3535/1669939931.pdf with MIME type application/pdf.`
-    - Using `media.image.url` instead renders an image, however not all elements in the skiMap array have entries for `media.image.url` (i.e. some are null), whereas for `media.original.url` do -- the CORBs issue should therefore be investigated.
+- The "X" close button symbol in the top right of the MapModal (i.e. the pop-up when you click on a resort card) does not work -- closing must be done using the "Close" button in the bottom right of the pop-up
+    - It appears to be due to conflict between the `e.stopPropagation()` and the fact that no event is passed to the method
+    - The `closeButton` property could be removed from MapModal to rectify this from a UI perspective while a solution is found
+- On clicking on a Map (i.e. opening MapModal component) the console provides a warning of `React does not recognize the 'skiMap' prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase 'skimap' instead. If you accidentally passed it from a parent component, remove it from the DOM element.`
+- The prop for the high-resolution `img` for the MapModal should be `{this.props.skiMap.media.original.url}`, rather than `{this.props.skiMap.media.image.url}.`
+    - The images do not load due to a CORBs issue: `Cross-Origin Read Blocking (CORB) blocked cross-origin response https://skimap.org/data/987/3535/1669939931.pdf with MIME type application/pdf.`
+    - Using `media.image.url` instead renders an image, however not all elements in the skiMap array have entries for `media.image.url` (i.e. some are null), whereas for `media.original.url` do -- the CORBs issue should therefore be investigated
 
 ## Final Product
 
 ## Future Improvements
 
+- Incorporating a larger API database. Currently, the data is limited to Zermatt only for building, testing and for loading speed purposes (the [full list of every ski area on the site](https://skimap.org/SkiAreas/index.json) > 5 seconds to load each time)
 - Deploying to GitHib Pages instead of Netlify. Following these instructions almost got it working. Just needed to amend navigation errors (i.e. it would chop off `/Ski-Map-App`
     - https://stackoverflow.com/questions/72251483/home-component-is-not-rendering-when-the-app-loads-on-github-pages-but-loading-o
     - https://github.com/rafgraph/spa-github-pages#usage-instructions
