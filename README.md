@@ -80,7 +80,7 @@ First off, the UI was broken into a component hierarchy. This was done using bot
 
 The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
-``` json
+``` yaml
 {
     "id": "987",
     "name": "Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche)",
