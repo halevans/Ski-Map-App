@@ -82,21 +82,21 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
 
 ``` json
 {
-    id: "987",
-    name: "Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche)",
-    opening_year: 1936,
-    official_website: "http://bergbahnen.zermatt.ch/",
-    owner: "",
-    terrain_park: "Yes",
-    night_skiing: "Unknown",
-    operating_status: "Operating",
-    latitude: 45.942496045578,
-    longitude: 7.7092856168747,
-    user: { ... },
-    tags: [ ... ],
-    ski_maps: [ ... ],
-    created: "2018-05-12T07:31:22+00:00",
-    regions: [ ... ]
+    "id": "987",
+    "name": "Matterhorn (Zermatt/​Breuil-Cervinia/​Valtournenche)",
+    "opening_year": 1936,
+    "official_website": "http://bergbahnen.zermatt.ch/",
+    "owner": "",
+    "terrain_park": "Yes",
+    "night_skiing": "Unknown",
+    "operating_status": "Operating",
+    "latitude": 45.942496045578,
+    "longitude": 7.7092856168747,
+    "user": { ... },
+    "tags": [ ... ],
+    "ski_maps": [ ... ],
+    "created": "2018-05-12T07:31:22+00:00",
+    "regions": [ ... ]
 }
 ```
 
