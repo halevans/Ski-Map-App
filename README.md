@@ -143,6 +143,7 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/). Be
 
 ## Future Improvements
 
+- Refactor code to be cleaner and more maintainable (i.e. based on current functionality, before adding new features)
 - Incorporating a larger API database. Currently, the data is limited to Zermatt only for building, testing and for loading speed purposes (the [full list of every ski area on the site](https://skimap.org/SkiAreas/index.json) > 5 seconds to load each time)
 - Adding a Search component to filter through the cards for the different area and/or years
 - Adding a Favourite button to the MapCards, and showing these on the Favourites page
