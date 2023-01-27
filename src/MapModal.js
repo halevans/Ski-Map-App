@@ -26,7 +26,11 @@ class MapModal extends Component {
                 <p></p>
                 <h6>Year Published: {this.props.skiMap.metadata.year_published}</h6>
                 <p>
-                    Official Website: <a href={this.props.skiArea.official_website}>{this.props.skiArea.official_website}</a>
+                    <i class="fa-solid fa-calendar-plus"></i> Opening Year: {this.props.skiArea.opening_year}
+                <br/>
+                    <i class="fa-solid fa-location-dot"></i> Latitude: {this.props.skiArea.latitude}; Longitude: {this.props.skiArea.longitude}
+                <br/>
+                    <i class="fa-solid fa-globe"></i> Official Website: <a href={this.props.skiArea.official_website}>{this.props.skiArea.official_website}</a>
                 </p>
             </Modal.Body>
             <Modal.Body>
