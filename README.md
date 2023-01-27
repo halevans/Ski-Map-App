@@ -78,7 +78,7 @@ First off, the UI was broken into a component hierarchy. This was done using bot
 
 ### API
 
-The data used for the app was sourced from [Skimap.org](https://skimap.org/).
+The data used for the app was sourced from [Skimap.org](https://skimap.org/). Below is an example response from the apu for [ski area 987](https://skimap.org/SkiAreas/view/987.json) (response abridged for brevity, replaced with '...'):
 
 ``` yaml
 {
@@ -94,7 +94,22 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/).
     "longitude": 7.7092856168747,
     "user": { ... },
     "tags": [ ... ],
-    "ski_maps": [ ... ],
+    "ski_maps": [ {
+        id: "23146",
+        metadata: {
+            year_published: "2022",
+            caption: "",
+            tags: [
+            "downhill"
+            ]
+        },
+        artist: null,
+        added_by: {
+            name: "somebody2"
+        },
+        media: {}
+        },
+        ... ],
     "created": "2018-05-12T07:31:22+00:00",
     "regions": [ ... ]
 }
