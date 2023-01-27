@@ -75,6 +75,8 @@ Pages are denoted in __bold__.
 
 ![React Components hierarchy](/images/React-components.png)
 
+### API
+
 ### Challenges
 
 ### Wins

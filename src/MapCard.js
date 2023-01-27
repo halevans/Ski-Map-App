@@ -10,23 +10,26 @@ class MapCard extends Component {
         }
     }
 
-    toggleModalShow = () => {
-        if (this.state.mapModalShow) {
-            this.setState({
-                mapModalShow: false
-            });
-        } else if (!this.state.mapModalShow) {
-            this.setState({
-                mapModalShow: true
-            });
-        }
+    toggleModalOpen = () => {
+        console.log("opening")
+        this.setState({
+            mapModalShow: true
+        });
+    }
+
+    toggleModalClose = (e) => {
+        e.stopPropagation();
+        console.log("closing")
+        this.setState({
+            mapModalShow: false
+        });
     }
 
     render() {
         return(
             <>
                 <Card 
-                    onClick={this.toggleModalShow}
+                    onClick={this.toggleModalOpen}
                     className="p-0 m-1 "
                     style={{ width: '18rem' }}
                     type="button">
@@ -36,7 +39,7 @@ class MapCard extends Component {
                         {this.props.skiMap && <Card.Subtitle>Year Published: {this.props.skiMap.metadata.year_published}</Card.Subtitle>}
                         <MapModal
                             show={this.state.mapModalShow}
-                            onHide={this.toggleModalShow}
+                            onHide={this.toggleModalClose}
                             skiMap={this.props.skiMap}
                             skiArea={this.props.skiArea}
                         />

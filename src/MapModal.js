@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
+import ListContainer from "./ListContainer";
 
 class MapModal extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class MapModal extends Component {
     render() {
         return (
             <Modal
+                backdrop="static"
                 {...this.props}
                 size="xl"
                 aria-labelledby="contained-modal-title-vcenter"
@@ -26,6 +28,9 @@ class MapModal extends Component {
                 <p>
                     Official Website: <a href={this.props.skiArea.official_website}>{this.props.skiArea.official_website}</a>
                 </p>
+            </Modal.Body>
+            <Modal.Body>
+                <ListContainer />
             </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.props.onHide}>Close</Button>
