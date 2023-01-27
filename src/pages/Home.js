@@ -14,7 +14,7 @@ class Home extends Component {
     }
 
     componentDidMount = () => {
-        const url = 'https://skimap.org/SkiAreas/view/990.json'; // 987 for Matterhorn Area only
+        const url = 'https://skimap.org/SkiAreas/view/987.json'; // 987 for Matterhorn Area only
       
         axios.get(url)
             .then((response) => {
