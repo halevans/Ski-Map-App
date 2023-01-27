@@ -146,7 +146,7 @@ The data used for the app was sourced from [Skimap.org](https://skimap.org/). Be
 - Incorporating a larger API database. Currently, the data is limited to Zermatt only for building, testing and for loading speed purposes (the [full list of every ski area on the site](https://skimap.org/SkiAreas/index.json) > 5 seconds to load each time)
 - Adding a Search component to filter through the cards for the different area and/or years
 - Adding a Favourite button to the MapCards, and showing these on the Favourites page
-- Deploying to GitHib Pages instead of Netlify. Following these instructions almost got it working. Just needed to amend navigation errors (i.e. it would chop off `/Ski-Map-App`
+- Deploying to GitHib Pages instead of Netlify. Following these instructions almost got it working. Just needed to amend navigation errors (i.e. it would chop off `/Ski-Map-App`)
     - https://stackoverflow.com/questions/72251483/home-component-is-not-rendering-when-the-app-loads-on-github-pages-but-loading-o
     - https://github.com/rafgraph/spa-github-pages#usage-instructions
 - Amending the Search component to include autocomplete based off the SkiArea names
