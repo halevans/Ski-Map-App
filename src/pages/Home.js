@@ -3,17 +3,18 @@ import React, { Component } from "react";
 import ListContainer from "../ListContainer";
 import MapCardGrid from "../MapCardGrid";
 import Search from "../Search";
+import dummyData from "../dummydata.json"
 
 class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            skiArea: ''
+            skiArea: dummyData
         }
     }
 
     componentDidMount = () => {
-        const url = 'https://skimap.org/SkiAreas/view/987.json'; // 987 for Matterhorn Area only
+        const url = 'https://skimap.org/SkiAreas/view/990.json'; // 987 for Matterhorn Area only
       
         axios.get(url)
             .then((response) => {
